@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Video</title>
+  </head>
+
+  <body>
+    <div>
+      <h3 class="m-3 d-flex justify-content-center">Video Reception Room</h3>
+    </div>
+
+    <!-- SignalWire Video Room -->
+    <script>
+      !(function (e, n, r) {
+        e[r] =
+          e[r] ||
+          function (n = {}) {
+            Object.assign((e[r].p = e[r].p || {}), n)
+          }
+        let t = n.currentScript
+        var o = n.createElement('script')
+        ;(o.type = 'module'),
+          (o.src = 'https://cdn.signalwire.com/video/rooms/index.js'),
+          (o.onload = function () {
+            var o = n.createElement('ready-room')
+            ;(o.params = e[r].p), t.parentNode.appendChild(o)
+          }),
+          t.parentNode.insertBefore(o, t)
+      })(window, document, 'swvr')
+      swvr({
+        token: 'vrg_72b1111058212dd25c50de9827408775',
+        // userName: 'your-name'
+      })
+    </script>
+    <!-- End SignalWire Video Room -->
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
